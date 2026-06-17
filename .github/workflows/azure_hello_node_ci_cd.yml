@@ -107,6 +107,7 @@ jobs:
               az aks get-credentials \
                 --resource-group ${{ secrets.AZURE_RESOURCE_GROUP }} \
                 --name ${{ secrets.AZURE_AKS_CLUSTER_NAME }}
+             kubelogin convert-kubeconfig -l azurecli
       
           - name: Verify connection
             run: kubectl get nodes
