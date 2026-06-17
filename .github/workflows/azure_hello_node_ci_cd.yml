@@ -4,7 +4,7 @@ on:
   # push:
   #   branches:
   #       - main
-  #   paths: 
+  #   paths: 3
   #       - "docker/app1-hello/node"2
   workflow_dispatch:
 
