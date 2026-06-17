@@ -33,7 +33,7 @@ spec:
           #         name: hello-db-secret
           #         key: HELLO_DB_PASSWORD
           ports:
-            - containerPort: 3000
+            - containerPort: 8080
 ---
 apiVersion: v1
 kind: Service
@@ -45,4 +45,4 @@ spec:
   type: LoadBalancer
   ports:
     - port: 80
-      targetPort: 3000 
+      targetPort: 8080 
