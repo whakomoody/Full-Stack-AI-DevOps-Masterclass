@@ -5,7 +5,7 @@ on:
   #   branches:
   #       - main
   #   paths: 
-  #       - "docker/app1-hello/node"
+  #       - "docker/app1-hello/node"2
   workflow_dispatch:
 
 jobs:
